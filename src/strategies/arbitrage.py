@@ -10,8 +10,9 @@ from dataclasses import dataclass
 
 from src.config.settings import Settings
 from src.risk.manager import RiskManager
-from src.exchanges.solana_dex import SolanaDEX, TradeOpportunity
-from src.exchanges.base_dex import BaseDEX, BaseTradeOpportunity
+from src.exchanges.real_apis import RealSolanaDEX, RealBaseDEX
+from src.exchanges.solana_dex import TradeOpportunity
+from src.exchanges.base_dex import BaseTradeOpportunity
 from src.utils.logger import TradeLogger
 
 
@@ -39,9 +40,9 @@ class ArbitrageStrategy:
         self.logger = logging.getLogger(__name__)
         self.trade_logger = TradeLogger("arbitrage_strategy")
         
-        # Initialize DEX clients
-        self.solana_dex = SolanaDEX(settings)
-        self.base_dex = BaseDEX(settings)
+        # Initialize DEX clients with real APIs
+        self.solana_dex = RealSolanaDEX(settings)
+        self.base_dex = RealBaseDEX(settings)
         
         # Strategy state
         self.running = False

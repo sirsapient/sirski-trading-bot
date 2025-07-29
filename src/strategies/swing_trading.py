@@ -12,8 +12,7 @@ import numpy as np
 
 from src.config.settings import Settings
 from src.risk.manager import RiskManager
-from src.exchanges.solana_dex import SolanaDEX
-from src.exchanges.base_dex import BaseDEX
+from src.exchanges.real_apis import RealSolanaDEX, RealBaseDEX
 from src.utils.logger import TradeLogger
 
 
@@ -50,9 +49,9 @@ class SwingTradingStrategy:
         self.logger = logging.getLogger(__name__)
         self.trade_logger = TradeLogger("swing_trading_strategy")
         
-        # Initialize DEX clients
-        self.solana_dex = SolanaDEX(settings)
-        self.base_dex = BaseDEX(settings)
+        # Initialize DEX clients with real APIs
+        self.solana_dex = RealSolanaDEX(settings)
+        self.base_dex = RealBaseDEX(settings)
         
         # Strategy state
         self.running = False
