@@ -1,0 +1,383 @@
+2025-07-29 18:28:48,656 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:28:49,018 - WARNING - Binance API returned status 451
+2025-07-29 18:28:49,856 - WARNING - Uniswap API returned status 429
+2025-07-29 18:28:49,856 - INFO - Available SOL prices: CoinGecko: $181.63, Jupiter: $95.00, Kraken: $181.54, Coinbase: $181.49
+2025-07-29 18:28:49,857 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.48 (91.189%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:28:49,857 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.44 (91.095%) Source: Real Jupiter vs Kraken
+2025-07-29 18:28:49,857 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.41 (91.037%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:29:19,963 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:29:20,260 - WARNING - Binance API returned status 451
+2025-07-29 18:29:20,671 - WARNING - Uniswap API returned status 429
+2025-07-29 18:29:20,672 - INFO - Available SOL prices: CoinGecko: $181.63, Jupiter: $95.00, Kraken: $181.54, Coinbase: $181.57
+2025-07-29 18:29:20,672 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.48 (91.189%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:29:20,672 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.44 (91.095%) Source: Real Jupiter vs Kraken
+2025-07-29 18:29:20,672 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.45 (91.132%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:43:39,720 - INFO - 24-Hour Paper Trading Bot (FIXED) initialized with $5000 portfolio
+2025-07-29 18:43:39,720 - INFO - Starting Phase 1: Conservative settings
+2025-07-29 18:43:39,720 - INFO - Starting 24-Hour Paper Trading Simulation with FIXED Jupiter API
+2025-07-29 18:43:39,720 - INFO - Starting Portfolio: $5000
+2025-07-29 18:43:39,720 - INFO - Min Profit Threshold: 0.100%
+2025-07-29 18:43:39,720 - INFO - Using multiple data sources: CoinGecko, Jupiter (fixed), Binance, Kraken, Coinbase, Uniswap V3
+2025-07-29 18:43:39,720 - INFO - Switching to Phase 1: Trade size $50, Position size 10%
+2025-07-29 18:43:39,943 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:43:40,279 - WARNING - Binance API returned status 451
+2025-07-29 18:43:40,657 - WARNING - Uniswap API returned status 429
+2025-07-29 18:43:40,657 - INFO - Available SOL prices: CoinGecko: $181.55, Jupiter: $95.00, Kraken: $181.34, Coinbase: $181.34
+2025-07-29 18:43:40,657 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.44 (91.105%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:43:40,657 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Kraken -> Coingecko) Profit: $0.05 (0.116%) Source: Real Kraken vs Coingecko
+2025-07-29 18:43:40,657 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Coinbase -> Coingecko) Profit: $0.05 (0.113%) Source: Real Coinbase vs Coingecko
+2025-07-29 18:43:40,657 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.35 (90.884%) Source: Real Jupiter vs Kraken
+2025-07-29 18:43:40,657 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.36 (90.889%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:43:41,433 - INFO - 24-Hour Paper Trading Bot (FIXED) initialized with $5000 portfolio
+2025-07-29 18:43:41,433 - INFO - Starting Phase 1: Conservative settings
+2025-07-29 18:43:41,433 - INFO - Starting 24-Hour Paper Trading Simulation with FIXED Jupiter API
+2025-07-29 18:43:41,434 - INFO - Starting Portfolio: $5000
+2025-07-29 18:43:41,434 - INFO - Min Profit Threshold: 0.100%
+2025-07-29 18:43:41,434 - INFO - Using multiple data sources: CoinGecko, Jupiter (fixed), Binance, Kraken, Coinbase, Uniswap V3
+2025-07-29 18:43:41,434 - INFO - Switching to Phase 1: Trade size $50, Position size 10%
+2025-07-29 18:43:41,536 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:43:41,785 - WARNING - Binance API returned status 451
+2025-07-29 18:43:42,345 - WARNING - Uniswap API returned status 429
+2025-07-29 18:43:42,346 - INFO - Available SOL prices: CoinGecko: $181.55, Jupiter: $95.00, Kraken: $181.34, Coinbase: $181.34
+2025-07-29 18:43:42,346 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.44 (91.105%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:43:42,346 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Kraken -> Coingecko) Profit: $0.05 (0.116%) Source: Real Kraken vs Coingecko
+2025-07-29 18:43:42,346 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Coinbase -> Coingecko) Profit: $0.05 (0.113%) Source: Real Coinbase vs Coingecko
+2025-07-29 18:43:42,346 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.35 (90.884%) Source: Real Jupiter vs Kraken
+2025-07-29 18:43:42,346 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.36 (90.889%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:44:10,738 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:44:10,991 - WARNING - Binance API returned status 451
+2025-07-29 18:44:11,439 - WARNING - Uniswap API returned status 429
+2025-07-29 18:44:11,440 - INFO - Available SOL prices: CoinGecko: $181.55, Jupiter: $95.00, Kraken: $181.34, Coinbase: $181.36
+2025-07-29 18:44:11,440 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.44 (91.105%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:44:11,441 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Kraken -> Coingecko) Profit: $0.05 (0.116%) Source: Real Kraken vs Coingecko
+2025-07-29 18:44:11,441 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Coinbase -> Coingecko) Profit: $0.04 (0.105%) Source: Real Coinbase vs Coingecko
+2025-07-29 18:44:11,442 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.35 (90.884%) Source: Real Jupiter vs Kraken
+2025-07-29 18:44:11,442 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.36 (90.905%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:44:12,459 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:44:12,730 - WARNING - Binance API returned status 451
+2025-07-29 18:44:13,053 - WARNING - Uniswap API returned status 429
+2025-07-29 18:44:13,053 - INFO - Available SOL prices: CoinGecko: $181.55, Jupiter: $95.00, Kraken: $181.34, Coinbase: $181.36
+2025-07-29 18:44:13,053 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.44 (91.105%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:44:13,053 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Kraken -> Coingecko) Profit: $0.05 (0.116%) Source: Real Kraken vs Coingecko
+2025-07-29 18:44:13,053 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Coinbase -> Coingecko) Profit: $0.04 (0.105%) Source: Real Coinbase vs Coingecko
+2025-07-29 18:44:13,054 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.35 (90.884%) Source: Real Jupiter vs Kraken
+2025-07-29 18:44:13,054 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.36 (90.905%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:44:41,645 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:44:41,927 - WARNING - Binance API returned status 451
+2025-07-29 18:44:42,394 - WARNING - Uniswap API returned status 429
+2025-07-29 18:44:42,395 - INFO - Available SOL prices: CoinGecko: $181.54, Jupiter: $95.00, Kraken: $181.32, Coinbase: $181.34
+2025-07-29 18:44:42,395 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.44 (91.095%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:44:42,395 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Kraken -> Coingecko) Profit: $0.05 (0.121%) Source: Real Kraken vs Coingecko
+2025-07-29 18:44:42,395 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Coinbase -> Coingecko) Profit: $0.05 (0.113%) Source: Real Coinbase vs Coingecko
+2025-07-29 18:44:42,395 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.35 (90.863%) Source: Real Jupiter vs Kraken
+2025-07-29 18:44:42,395 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.35 (90.879%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:44:43,146 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:44:43,404 - WARNING - Binance API returned status 451
+2025-07-29 18:44:43,912 - WARNING - Uniswap API returned status 429
+2025-07-29 18:44:43,913 - INFO - Available SOL prices: CoinGecko: $181.54, Jupiter: $95.00, Kraken: $181.32, Coinbase: $181.26
+2025-07-29 18:44:43,913 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.44 (91.095%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:44:43,913 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Kraken -> Coingecko) Profit: $0.05 (0.121%) Source: Real Kraken vs Coingecko
+2025-07-29 18:44:43,913 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Coinbase -> Coingecko) Profit: $0.06 (0.152%) Source: Real Coinbase vs Coingecko
+2025-07-29 18:44:43,913 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.35 (90.863%) Source: Real Jupiter vs Kraken
+2025-07-29 18:44:43,913 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.32 (90.805%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:45:12,546 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:45:12,828 - WARNING - Binance API returned status 451
+2025-07-29 18:45:13,537 - WARNING - Uniswap API returned status 429
+2025-07-29 18:45:13,537 - INFO - Available SOL prices: CoinGecko: $181.54, Jupiter: $95.00, Kraken: $181.16, Coinbase: $181.22
+2025-07-29 18:45:13,537 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.44 (91.095%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:45:13,538 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Kraken -> Coingecko) Profit: $0.08 (0.210%) Source: Real Kraken vs Coingecko
+2025-07-29 18:45:13,538 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Coinbase -> Coingecko) Profit: $0.07 (0.179%) Source: Real Coinbase vs Coingecko
+2025-07-29 18:45:13,538 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.28 (90.695%) Source: Real Jupiter vs Kraken
+2025-07-29 18:45:13,538 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.30 (90.753%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:45:14,013 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:45:14,273 - WARNING - Binance API returned status 451
+2025-07-29 18:45:14,592 - WARNING - Uniswap API returned status 429
+2025-07-29 18:45:14,592 - INFO - Available SOL prices: CoinGecko: $181.54, Jupiter: $95.00, Kraken: $181.16, Coinbase: $181.22
+2025-07-29 18:45:14,592 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.44 (91.095%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:45:14,592 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Kraken -> Coingecko) Profit: $0.08 (0.210%) Source: Real Kraken vs Coingecko
+2025-07-29 18:45:14,592 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Coinbase -> Coingecko) Profit: $0.07 (0.179%) Source: Real Coinbase vs Coingecko
+2025-07-29 18:45:14,592 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.28 (90.695%) Source: Real Jupiter vs Kraken
+2025-07-29 18:45:14,593 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.30 (90.753%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:45:43,720 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:45:43,974 - WARNING - Binance API returned status 451
+2025-07-29 18:45:44,661 - WARNING - Uniswap API returned status 429
+2025-07-29 18:45:44,661 - INFO - Available SOL prices: CoinGecko: $181.46, Jupiter: $95.00, Kraken: $181.00, Coinbase: $181.11
+2025-07-29 18:45:44,662 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.40 (91.011%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:45:44,662 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Kraken -> Coingecko) Profit: $0.10 (0.254%) Source: Real Kraken vs Coingecko
+2025-07-29 18:45:44,662 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Coinbase -> Coingecko) Profit: $0.08 (0.193%) Source: Real Coinbase vs Coingecko
+2025-07-29 18:45:44,662 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.21 (90.526%) Source: Real Jupiter vs Kraken
+2025-07-29 18:45:44,662 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.26 (90.642%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:45:44,700 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:45:44,965 - WARNING - Binance API returned status 451
+2025-07-29 18:45:45,252 - WARNING - Uniswap API returned status 429
+2025-07-29 18:45:45,252 - INFO - Available SOL prices: CoinGecko: $181.46, Jupiter: $95.00, Kraken: $181.00, Coinbase: $181.15
+2025-07-29 18:45:45,253 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.40 (91.011%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:45:45,253 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Kraken -> Coingecko) Profit: $0.10 (0.254%) Source: Real Kraken vs Coingecko
+2025-07-29 18:45:45,253 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Coinbase -> Coingecko) Profit: $0.07 (0.174%) Source: Real Coinbase vs Coingecko
+2025-07-29 18:45:45,253 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.21 (90.526%) Source: Real Jupiter vs Kraken
+2025-07-29 18:45:45,253 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.27 (90.679%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:46:14,775 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:46:15,092 - WARNING - Binance API returned status 451
+2025-07-29 18:46:15,366 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:46:15,478 - WARNING - Uniswap API returned status 429
+2025-07-29 18:46:15,478 - INFO - Available SOL prices: CoinGecko: $181.46, Jupiter: $95.00, Kraken: $181.00, Coinbase: $181.00
+2025-07-29 18:46:15,478 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.40 (91.011%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:46:15,478 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Kraken -> Coingecko) Profit: $0.10 (0.254%) Source: Real Kraken vs Coingecko
+2025-07-29 18:46:15,478 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Coinbase -> Coingecko) Profit: $0.10 (0.251%) Source: Real Coinbase vs Coingecko
+2025-07-29 18:46:15,478 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.21 (90.526%) Source: Real Jupiter vs Kraken
+2025-07-29 18:46:15,478 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.21 (90.532%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:46:15,612 - WARNING - Binance API returned status 451
+2025-07-29 18:46:16,003 - WARNING - Uniswap API returned status 429
+2025-07-29 18:46:16,003 - INFO - Available SOL prices: CoinGecko: $181.46, Jupiter: $95.00, Kraken: $181.00, Coinbase: $181.00
+2025-07-29 18:46:16,004 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.40 (91.011%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:46:16,004 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Kraken -> Coingecko) Profit: $0.10 (0.254%) Source: Real Kraken vs Coingecko
+2025-07-29 18:46:16,004 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Coinbase -> Coingecko) Profit: $0.10 (0.251%) Source: Real Coinbase vs Coingecko
+2025-07-29 18:46:16,004 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.21 (90.526%) Source: Real Jupiter vs Kraken
+2025-07-29 18:46:16,004 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.21 (90.532%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:46:46,208 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:46:46,558 - WARNING - Binance API returned status 451
+2025-07-29 18:46:46,998 - WARNING - Uniswap API returned status 429
+2025-07-29 18:46:46,998 - INFO - Available SOL prices: CoinGecko: $181.40, Jupiter: $95.00, Kraken: $181.00, Coinbase: $181.01
+2025-07-29 18:46:46,998 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.38 (90.947%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:46:46,998 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Kraken -> Coingecko) Profit: $0.09 (0.221%) Source: Real Kraken vs Coingecko
+2025-07-29 18:46:46,999 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Coinbase -> Coingecko) Profit: $0.09 (0.215%) Source: Real Coinbase vs Coingecko
+2025-07-29 18:46:46,999 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.21 (90.526%) Source: Real Jupiter vs Kraken
+2025-07-29 18:46:46,999 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.21 (90.537%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:47:17,207 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:47:17,512 - WARNING - Binance API returned status 451
+2025-07-29 18:47:17,850 - WARNING - Uniswap API returned status 429
+2025-07-29 18:47:17,850 - INFO - Available SOL prices: CoinGecko: $181.40, Jupiter: $95.00, Kraken: $181.02, Coinbase: $181.00
+2025-07-29 18:47:17,850 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.38 (90.947%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:47:17,850 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Kraken -> Coingecko) Profit: $0.08 (0.210%) Source: Real Kraken vs Coingecko
+2025-07-29 18:47:17,850 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Coinbase -> Coingecko) Profit: $0.09 (0.218%) Source: Real Coinbase vs Coingecko
+2025-07-29 18:47:17,850 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.22 (90.547%) Source: Real Jupiter vs Kraken
+2025-07-29 18:47:17,850 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.21 (90.532%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:47:48,054 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:47:48,362 - WARNING - Binance API returned status 451
+2025-07-29 18:47:48,923 - WARNING - Uniswap API returned status 429
+2025-07-29 18:47:48,923 - INFO - Available SOL prices: CoinGecko: $181.34, Jupiter: $95.00, Kraken: $181.02, Coinbase: $181.09
+2025-07-29 18:47:48,923 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.35 (90.884%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:47:48,923 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Kraken -> Coingecko) Profit: $0.07 (0.177%) Source: Real Kraken vs Coingecko
+2025-07-29 18:47:48,923 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Coinbase -> Coingecko) Profit: $0.06 (0.141%) Source: Real Coinbase vs Coingecko
+2025-07-29 18:47:48,923 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.22 (90.547%) Source: Real Jupiter vs Kraken
+2025-07-29 18:47:48,923 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.25 (90.616%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:48:19,056 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:48:19,328 - WARNING - Binance API returned status 451
+2025-07-29 18:48:19,871 - WARNING - Uniswap API returned status 429
+2025-07-29 18:48:19,872 - INFO - Available SOL prices: CoinGecko: $181.34, Jupiter: $95.00, Kraken: $181.19, Coinbase: $181.22
+2025-07-29 18:48:19,872 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.35 (90.884%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:48:19,872 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.29 (90.726%) Source: Real Jupiter vs Kraken
+2025-07-29 18:48:19,872 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.30 (90.753%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:48:50,085 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:48:50,385 - WARNING - Binance API returned status 451
+2025-07-29 18:48:50,849 - WARNING - Uniswap API returned status 429
+2025-07-29 18:48:50,849 - INFO - Available SOL prices: CoinGecko: $181.33, Jupiter: $95.00, Kraken: $181.16, Coinbase: $181.25
+2025-07-29 18:48:50,849 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.35 (90.874%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:48:50,849 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.28 (90.695%) Source: Real Jupiter vs Kraken
+2025-07-29 18:48:50,849 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.31 (90.784%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:49:09,359 - INFO - 24-Hour Paper Trading Bot (FIXED) initialized with $5000 portfolio
+2025-07-29 18:49:09,360 - INFO - Starting Phase 1: Conservative settings
+2025-07-29 18:49:09,361 - INFO - Starting 24-Hour Paper Trading Simulation with FIXED Jupiter API
+2025-07-29 18:49:09,362 - INFO - Starting Portfolio: $5000
+2025-07-29 18:49:09,362 - INFO - Min Profit Threshold: 0.100%
+2025-07-29 18:49:09,362 - INFO - Using multiple data sources: CoinGecko, Jupiter (fixed), Binance, Kraken, Coinbase, Uniswap V3
+2025-07-29 18:49:09,362 - INFO - Switching to Phase 1: Trade size $50, Position size 10%
+2025-07-29 18:49:09,455 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:49:09,699 - WARNING - Binance API returned status 451
+2025-07-29 18:49:10,141 - WARNING - Uniswap API returned status 429
+2025-07-29 18:49:10,141 - INFO - Available SOL prices: CoinGecko: $181.33, Jupiter: $95.00, Kraken: $181.12, Coinbase: $181.16
+2025-07-29 18:49:10,142 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.35 (90.874%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:49:10,142 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Kraken -> Coingecko) Profit: $0.05 (0.116%) Source: Real Kraken vs Coingecko
+2025-07-29 18:49:10,145 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.26 (90.653%) Source: Real Jupiter vs Kraken
+2025-07-29 18:49:10,145 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.28 (90.689%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:49:21,030 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:49:21,344 - WARNING - Binance API returned status 451
+2025-07-29 18:49:21,708 - WARNING - Uniswap API returned status 429
+2025-07-29 18:49:21,709 - INFO - Available SOL prices: CoinGecko: $181.33, Jupiter: $95.00, Kraken: $181.12, Coinbase: $181.12
+2025-07-29 18:49:21,709 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.35 (90.874%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:49:21,709 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Kraken -> Coingecko) Profit: $0.05 (0.116%) Source: Real Kraken vs Coingecko
+2025-07-29 18:49:21,709 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Coinbase -> Coingecko) Profit: $0.05 (0.113%) Source: Real Coinbase vs Coingecko
+2025-07-29 18:49:21,710 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.26 (90.653%) Source: Real Jupiter vs Kraken
+2025-07-29 18:49:21,710 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.26 (90.658%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:49:40,259 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:49:40,788 - WARNING - Binance API returned status 451
+2025-07-29 18:49:41,526 - WARNING - Uniswap API returned status 429
+2025-07-29 18:49:41,526 - INFO - Available SOL prices: CoinGecko: $181.33, Jupiter: $95.00, Kraken: $181.24, Coinbase: $181.13
+2025-07-29 18:49:41,527 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.35 (90.874%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:49:41,527 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Coinbase -> Coingecko) Profit: $0.04 (0.110%) Source: Real Coinbase vs Coingecko
+2025-07-29 18:49:41,527 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.31 (90.779%) Source: Real Jupiter vs Kraken
+2025-07-29 18:49:41,527 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.27 (90.663%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:49:51,916 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:49:52,200 - WARNING - Binance API returned status 451
+2025-07-29 18:49:53,075 - WARNING - Uniswap API returned status 429
+2025-07-29 18:49:53,076 - INFO - Available SOL prices: CoinGecko: $181.31, Jupiter: $95.00, Kraken: $181.24, Coinbase: $181.22
+2025-07-29 18:49:53,076 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.34 (90.853%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:49:53,076 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.31 (90.779%) Source: Real Jupiter vs Kraken
+2025-07-29 18:49:53,076 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.30 (90.753%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:50:11,633 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:50:11,993 - WARNING - Binance API returned status 451
+2025-07-29 18:50:12,729 - WARNING - Uniswap API returned status 429
+2025-07-29 18:50:12,730 - INFO - Available SOL prices: CoinGecko: $181.31, Jupiter: $95.00, Kraken: $181.21, Coinbase: $181.23
+2025-07-29 18:50:12,730 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.34 (90.853%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:50:12,730 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.30 (90.747%) Source: Real Jupiter vs Kraken
+2025-07-29 18:50:12,730 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.31 (90.768%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:50:23,232 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:50:23,550 - WARNING - Binance API returned status 451
+2025-07-29 18:50:23,947 - WARNING - Uniswap API returned status 429
+2025-07-29 18:50:23,948 - INFO - Available SOL prices: CoinGecko: $181.31, Jupiter: $95.00, Kraken: $181.17, Coinbase: $181.23
+2025-07-29 18:50:23,948 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.34 (90.853%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:50:23,948 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.28 (90.705%) Source: Real Jupiter vs Kraken
+2025-07-29 18:50:23,948 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.31 (90.768%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:50:42,820 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:50:43,100 - WARNING - Binance API returned status 451
+2025-07-29 18:50:43,557 - WARNING - Uniswap API returned status 429
+2025-07-29 18:50:43,558 - INFO - Available SOL prices: CoinGecko: $181.31, Jupiter: $95.00, Kraken: $181.23, Coinbase: $181.19
+2025-07-29 18:50:43,558 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.34 (90.853%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:50:43,558 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.31 (90.768%) Source: Real Jupiter vs Kraken
+2025-07-29 18:50:43,558 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.29 (90.721%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:50:54,137 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:50:54,475 - WARNING - Binance API returned status 451
+2025-07-29 18:50:54,939 - WARNING - Uniswap API returned status 429
+2025-07-29 18:50:54,940 - INFO - Available SOL prices: CoinGecko: $181.30, Jupiter: $95.00, Kraken: $181.23, Coinbase: $181.19
+2025-07-29 18:50:54,940 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.34 (90.842%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:50:54,940 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.31 (90.768%) Source: Real Jupiter vs Kraken
+2025-07-29 18:50:54,940 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.29 (90.721%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:51:13,712 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:51:13,982 - WARNING - Binance API returned status 451
+2025-07-29 18:51:14,393 - WARNING - Uniswap API returned status 429
+2025-07-29 18:51:14,393 - INFO - Available SOL prices: CoinGecko: $181.30, Jupiter: $95.00, Kraken: $181.23, Coinbase: $181.22
+2025-07-29 18:51:14,393 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.34 (90.842%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:51:14,393 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.31 (90.768%) Source: Real Jupiter vs Kraken
+2025-07-29 18:51:14,394 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.30 (90.753%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:51:25,071 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:51:25,463 - WARNING - Binance API returned status 451
+2025-07-29 18:51:25,960 - WARNING - Uniswap API returned status 429
+2025-07-29 18:51:25,960 - INFO - Available SOL prices: CoinGecko: $181.30, Jupiter: $95.00, Kraken: $181.23, Coinbase: $181.22
+2025-07-29 18:51:25,960 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.34 (90.842%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:51:25,960 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.31 (90.768%) Source: Real Jupiter vs Kraken
+2025-07-29 18:51:25,960 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.30 (90.753%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:51:44,563 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:51:44,966 - WARNING - Binance API returned status 451
+2025-07-29 18:51:45,538 - WARNING - Uniswap API returned status 429
+2025-07-29 18:51:45,539 - INFO - Available SOL prices: CoinGecko: $181.30, Jupiter: $95.00, Kraken: $181.08, Coinbase: $181.19
+2025-07-29 18:51:45,539 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.34 (90.842%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:51:45,539 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Kraken -> Coingecko) Profit: $0.05 (0.121%) Source: Real Kraken vs Coingecko
+2025-07-29 18:51:45,539 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.24 (90.611%) Source: Real Jupiter vs Kraken
+2025-07-29 18:51:45,539 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.29 (90.732%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:51:56,117 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:51:56,397 - WARNING - Binance API returned status 451
+2025-07-29 18:51:57,101 - WARNING - Uniswap API returned status 429
+2025-07-29 18:51:57,101 - INFO - Available SOL prices: CoinGecko: $181.15, Jupiter: $95.00, Kraken: $181.08, Coinbase: $181.09
+2025-07-29 18:51:57,102 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.27 (90.684%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:51:57,102 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.24 (90.611%) Source: Real Jupiter vs Kraken
+2025-07-29 18:51:57,102 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.25 (90.616%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:52:15,696 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:52:15,965 - WARNING - Binance API returned status 451
+2025-07-29 18:52:16,298 - WARNING - Uniswap API returned status 429
+2025-07-29 18:52:16,299 - INFO - Available SOL prices: CoinGecko: $181.15, Jupiter: $95.00, Kraken: $181.13, Coinbase: $181.09
+2025-07-29 18:52:16,299 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.27 (90.684%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:52:16,299 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.27 (90.663%) Source: Real Jupiter vs Kraken
+2025-07-29 18:52:16,299 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.25 (90.616%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:52:27,195 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:52:27,478 - WARNING - Binance API returned status 451
+2025-07-29 18:52:28,044 - WARNING - Uniswap API returned status 429
+2025-07-29 18:52:28,045 - INFO - Available SOL prices: CoinGecko: $181.15, Jupiter: $95.00, Kraken: $181.13, Coinbase: $181.04
+2025-07-29 18:52:28,045 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.27 (90.684%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:52:28,045 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.27 (90.663%) Source: Real Jupiter vs Kraken
+2025-07-29 18:52:28,045 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.23 (90.574%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:52:46,449 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:52:46,729 - WARNING - Binance API returned status 451
+2025-07-29 18:52:47,068 - WARNING - Uniswap API returned status 429
+2025-07-29 18:52:47,068 - INFO - Available SOL prices: CoinGecko: $181.15, Jupiter: $95.00, Kraken: $181.18, Coinbase: $181.12
+2025-07-29 18:52:47,069 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.27 (90.684%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:52:47,069 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.29 (90.716%) Source: Real Jupiter vs Kraken
+2025-07-29 18:52:47,069 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.26 (90.658%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:52:58,240 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:52:58,539 - WARNING - Binance API returned status 451
+2025-07-29 18:52:59,167 - WARNING - Uniswap API returned status 429
+2025-07-29 18:52:59,167 - INFO - Available SOL prices: CoinGecko: $181.12, Jupiter: $95.00, Kraken: $181.16, Coinbase: $181.16
+2025-07-29 18:52:59,167 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.26 (90.653%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:52:59,167 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.28 (90.695%) Source: Real Jupiter vs Kraken
+2025-07-29 18:52:59,167 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.28 (90.689%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:53:17,175 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:53:17,446 - WARNING - Binance API returned status 451
+2025-07-29 18:53:18,062 - WARNING - Uniswap API returned status 429
+2025-07-29 18:53:18,062 - INFO - Available SOL prices: CoinGecko: $181.12, Jupiter: $95.00, Kraken: $181.17, Coinbase: $181.09
+2025-07-29 18:53:18,062 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.26 (90.653%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:53:18,062 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.28 (90.705%) Source: Real Jupiter vs Kraken
+2025-07-29 18:53:18,062 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.25 (90.626%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:53:29,273 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:53:29,581 - WARNING - Binance API returned status 451
+2025-07-29 18:53:30,085 - WARNING - Uniswap API returned status 429
+2025-07-29 18:53:30,086 - INFO - Available SOL prices: CoinGecko: $181.12, Jupiter: $95.00, Kraken: $181.17, Coinbase: $181.09
+2025-07-29 18:53:30,086 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.26 (90.653%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:53:30,086 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.28 (90.705%) Source: Real Jupiter vs Kraken
+2025-07-29 18:53:30,086 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.25 (90.626%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:53:48,172 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:53:48,408 - WARNING - Binance API returned status 451
+2025-07-29 18:53:48,922 - WARNING - Uniswap API returned status 429
+2025-07-29 18:53:48,922 - INFO - Available SOL prices: CoinGecko: $181.12, Jupiter: $95.00, Kraken: $181.17, Coinbase: $181.07
+2025-07-29 18:53:48,923 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.26 (90.653%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:53:48,923 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.28 (90.705%) Source: Real Jupiter vs Kraken
+2025-07-29 18:53:48,923 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.24 (90.600%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:54:00,257 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:54:00,531 - WARNING - Binance API returned status 451
+2025-07-29 18:54:01,053 - WARNING - Uniswap API returned status 429
+2025-07-29 18:54:01,054 - INFO - Available SOL prices: CoinGecko: $181.13, Jupiter: $95.00, Kraken: $181.17, Coinbase: $181.12
+2025-07-29 18:54:01,054 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.27 (90.663%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:54:01,056 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.28 (90.705%) Source: Real Jupiter vs Kraken
+2025-07-29 18:54:01,056 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.26 (90.647%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:54:19,040 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:54:19,341 - WARNING - Binance API returned status 451
+2025-07-29 18:54:19,753 - WARNING - Uniswap API returned status 429
+2025-07-29 18:54:19,753 - INFO - Available SOL prices: CoinGecko: $181.13, Jupiter: $95.00, Kraken: $181.17, Coinbase: $181.13
+2025-07-29 18:54:19,753 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.27 (90.663%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:54:19,753 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.28 (90.705%) Source: Real Jupiter vs Kraken
+2025-07-29 18:54:19,754 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.27 (90.668%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:54:31,173 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:54:31,746 - WARNING - Binance API returned status 451
+2025-07-29 18:54:32,346 - WARNING - Uniswap API returned status 429
+2025-07-29 18:54:32,346 - INFO - Available SOL prices: CoinGecko: $181.13, Jupiter: $95.00, Kraken: $181.17, Coinbase: $181.13
+2025-07-29 18:54:32,347 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.27 (90.663%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:54:32,347 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.28 (90.705%) Source: Real Jupiter vs Kraken
+2025-07-29 18:54:32,347 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.27 (90.668%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:54:49,880 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:54:50,221 - WARNING - Binance API returned status 451
+2025-07-29 18:54:50,652 - WARNING - Uniswap API returned status 429
+2025-07-29 18:54:50,652 - INFO - Available SOL prices: CoinGecko: $181.13, Jupiter: $95.00, Kraken: $181.26, Coinbase: $181.25
+2025-07-29 18:54:50,653 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.27 (90.663%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:54:50,653 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.32 (90.800%) Source: Real Jupiter vs Kraken
+2025-07-29 18:54:50,654 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.31 (90.784%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:55:02,535 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:55:03,140 - WARNING - Binance API returned status 451
+2025-07-29 18:55:03,576 - WARNING - Uniswap API returned status 429
+2025-07-29 18:55:03,576 - INFO - Available SOL prices: CoinGecko: $181.14, Jupiter: $95.00, Kraken: $181.26, Coinbase: $181.25
+2025-07-29 18:55:03,576 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.27 (90.674%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:55:03,576 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.32 (90.800%) Source: Real Jupiter vs Kraken
+2025-07-29 18:55:03,577 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.32 (90.795%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:55:20,749 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:55:21,013 - WARNING - Binance API returned status 451
+2025-07-29 18:55:21,670 - WARNING - Uniswap API returned status 429
+2025-07-29 18:55:21,670 - INFO - Available SOL prices: CoinGecko: $181.14, Jupiter: $95.00, Kraken: $181.46, Coinbase: $181.30
+2025-07-29 18:55:21,670 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.27 (90.674%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:55:21,671 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Coingecko -> Kraken) Profit: $0.07 (0.177%) Source: Real Coingecko vs Kraken
+2025-07-29 18:55:21,671 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.40 (91.011%) Source: Real Jupiter vs Kraken
+2025-07-29 18:55:21,671 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.34 (90.842%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:55:33,656 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:55:33,936 - WARNING - Binance API returned status 451
+2025-07-29 18:55:34,560 - WARNING - Uniswap API returned status 429
+2025-07-29 18:55:34,560 - INFO - Available SOL prices: CoinGecko: $181.14, Jupiter: $95.00, Kraken: $181.41, Coinbase: $181.34
+2025-07-29 18:55:34,560 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.27 (90.674%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:55:34,561 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Coingecko -> Kraken) Profit: $0.06 (0.149%) Source: Real Coingecko vs Kraken
+2025-07-29 18:55:34,561 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Coingecko -> Coinbase) Profit: $0.05 (0.113%) Source: Real Coingecko vs Coinbase
+2025-07-29 18:55:34,561 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.38 (90.958%) Source: Real Jupiter vs Kraken
+2025-07-29 18:55:34,561 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.36 (90.889%) Source: Real Jupiter vs Coinbase
+2025-07-29 18:55:51,764 - WARNING - Jupiter v4 API error: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-07-29 18:55:52,030 - WARNING - Binance API returned status 451
+2025-07-29 18:55:52,438 - WARNING - Uniswap API returned status 429
+2025-07-29 18:55:52,439 - INFO - Available SOL prices: CoinGecko: $181.14, Jupiter: $95.00, Kraken: $181.35, Coinbase: $181.39
+2025-07-29 18:55:52,439 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coingecko) Profit: $36.27 (90.674%) Source: Real Jupiter vs Coingecko
+2025-07-29 18:55:52,439 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Coingecko -> Kraken) Profit: $0.05 (0.116%) Source: Real Coingecko vs Kraken
+2025-07-29 18:55:52,439 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Coingecko -> Coinbase) Profit: $0.06 (0.138%) Source: Real Coingecko vs Coinbase
+2025-07-29 18:55:52,439 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Kraken) Profit: $36.36 (90.895%) Source: Real Jupiter vs Kraken
+2025-07-29 18:55:52,439 - INFO - FIXED PAPER TRADE [Phase 1]: SOL (Jupiter -> Coinbase) Profit: $36.37 (90.937%) Source: Real Jupiter vs Coinbase

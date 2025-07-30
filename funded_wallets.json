@@ -1,0 +1,8 @@
+{
+  "funded_addresses": {
+    "solana": "9JnHrkYXY8KV49vb4ps2SRZ2mBZ8AsK4XSHn3wi3ANfc",
+    "base": "0x2D21399C95753AbEFCeF2100239CaF3fa6661492"
+  },
+  "note": "You need to provide the actual private keys for these addresses to enable live trading",
+  "paper_trading": "The bot will work in paper trading mode with these addresses as reference"
+}

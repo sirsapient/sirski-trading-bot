@@ -1,0 +1,20 @@
+2025-07-29 18:30:51,620 - INFO - 24-Hour Paper Trading Bot (WORKING APIs) initialized with $5000 portfolio
+2025-07-29 18:30:51,620 - INFO - Starting Phase 1: Conservative settings
+2025-07-29 18:30:51,620 - INFO - Starting 24-Hour Paper Trading Simulation with WORKING APIs ONLY
+2025-07-29 18:30:51,620 - INFO - Starting Portfolio: $5000
+2025-07-29 18:30:51,620 - INFO - Min Profit Threshold: 0.100%
+2025-07-29 18:30:51,620 - INFO - Using reliable APIs: CoinGecko, Kraken, Coinbase
+2025-07-29 18:30:51,620 - INFO - Switching to Phase 1: Trade size $50, Position size 10%
+2025-07-29 18:30:51,973 - INFO - Available SOL prices: CoinGecko: $181.50, Kraken: $181.54, Coinbase: $181.53
+2025-07-29 18:31:22,281 - INFO - Available SOL prices: CoinGecko: $181.50, Kraken: $181.54, Coinbase: $181.54
+2025-07-29 18:31:52,822 - INFO - Available SOL prices: CoinGecko: $181.52, Kraken: $181.54, Coinbase: $181.69
+2025-07-29 18:35:26,176 - INFO - 24-Hour Paper Trading Bot (WORKING APIs) initialized with $5000 portfolio
+2025-07-29 18:35:26,177 - INFO - Starting Phase 1: Conservative settings
+2025-07-29 18:35:26,177 - INFO - Starting 24-Hour Paper Trading Simulation with WORKING APIs ONLY
+2025-07-29 18:35:26,177 - INFO - Starting Portfolio: $5000
+2025-07-29 18:35:26,177 - INFO - Min Profit Threshold: 0.100%
+2025-07-29 18:35:26,177 - INFO - Using reliable APIs: CoinGecko, Kraken, Coinbase
+2025-07-29 18:35:26,177 - INFO - Switching to Phase 1: Trade size $50, Position size 10%
+2025-07-29 18:35:26,748 - INFO - Available SOL prices: CoinGecko: $181.57, Kraken: $181.60, Coinbase: $181.56
+2025-07-29 18:35:57,104 - INFO - Available SOL prices: CoinGecko: $181.57, Kraken: $181.60, Coinbase: $181.66
+2025-07-29 18:36:27,459 - INFO - Available SOL prices: CoinGecko: $181.57, Kraken: $181.62, Coinbase: $181.63

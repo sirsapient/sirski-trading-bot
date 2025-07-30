@@ -57,6 +57,16 @@ class BaseDEX:
         # Price cache
         self._price_cache: Dict[str, BasePriceData] = {}
         self._last_update = datetime.now()
+        
+        # CHANGE FROM: self._cache_duration = 10  # seconds  
+        self._cache_duration = settings.price_cache_duration * 2  # 2 minutes cache
+        
+        if hasattr(settings, 'trading_mode') and settings.trading_mode == 'paper':
+            self._cache_duration = settings.price_cache_duration * 10  # 10 minutes for paper trading
+        
+        # Import rate limiter
+        from src.utils.rate_limiter import RateLimiter
+        self.rate_limiter = RateLimiter()
     
     async def initialize(self):
         """Initialize the Base DEX client."""
@@ -72,6 +82,9 @@ class BaseDEX:
     async def get_uniswap_v3_price(self, token: str) -> Optional[float]:
         """Get token price from Uniswap V3 on Base."""
         try:
+            # Add rate limiting
+            await self.rate_limiter.wait_if_needed("uniswap_api")
+            
             if not self.session:
                 return None
             

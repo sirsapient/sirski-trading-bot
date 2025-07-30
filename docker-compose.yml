@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  trading-bot:
+    build: .
+    container_name: sirski-trading-bot
+    restart: unless-stopped
+    environment:
+      - SOLANA_PRIVATE_KEY=${SOLANA_PRIVATE_KEY}
+      - BASE_PRIVATE_KEY=${BASE_PRIVATE_KEY}
+      - SOLANA_RPC_URL=${SOLANA_RPC_URL}
+      - BASE_RPC_URL=${BASE_RPC_URL}
+      - MIN_ARBITRAGE_PROFIT=${MIN_ARBITRAGE_PROFIT}
+      - MAX_POSITION_SIZE=${MAX_POSITION_SIZE}
+      - MIN_TRADE_SIZE=${MIN_TRADE_SIZE}
+      - MAX_DAILY_LOSS=${MAX_DAILY_LOSS}
+      - DISCORD_WEBHOOK_URL=${DISCORD_WEBHOOK_URL}
+      - JUPITER_API_URL=${JUPITER_API_URL}
+      - UNISWAP_V3_API_URL=${UNISWAP_V3_API_URL}
+      - SOLANA_PAIRS=${SOLANA_PAIRS}
+      - BASE_PAIRS=${BASE_PAIRS}
+      - STOP_LOSS_PERCENTAGE=${STOP_LOSS_PERCENTAGE}
+      - TAKE_PROFIT_PERCENTAGE=${TAKE_PROFIT_PERCENTAGE}
+      - MAX_SLIPPAGE=${MAX_SLIPPAGE}
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+    command: ["python", "src/main.py", "--mode=${TRADING_MODE:-paper}"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Optional: Add monitoring with Grafana
+  grafana:
+    image: grafana/grafana:latest
+    container_name: trading-bot-grafana
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - grafana-storage:/var/lib/grafana
+    depends_on:
+      - trading-bot
+
+volumes:
+  grafana-storage: 

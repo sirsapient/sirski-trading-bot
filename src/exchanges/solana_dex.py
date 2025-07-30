@@ -58,6 +58,17 @@ class SolanaDEX:
         # Price cache
         self._price_cache: Dict[str, PriceData] = {}
         self._last_update = datetime.now()
+        
+        # CHANGE FROM: self._cache_duration = 5  # seconds
+        self._cache_duration = settings.price_cache_duration  # 1 minute cache - much better!
+        
+        # Add paper trading optimization
+        if hasattr(settings, 'trading_mode') and settings.trading_mode == 'paper':
+            self._cache_duration = settings.price_cache_duration * 5  # 5 minutes for paper trading
+        
+        # Import rate limiter
+        from src.utils.rate_limiter import RateLimiter
+        self.rate_limiter = RateLimiter()
     
     async def initialize(self):
         """Initialize the Solana DEX client."""
@@ -73,6 +84,9 @@ class SolanaDEX:
     async def get_jupiter_price(self, token: str) -> Optional[float]:
         """Get token price from Jupiter aggregator."""
         try:
+            # Add rate limiting
+            await self.rate_limiter.wait_if_needed("jupiter_api")
+            
             if not self.session:
                 return None
             

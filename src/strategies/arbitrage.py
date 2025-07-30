@@ -47,7 +47,15 @@ class ArbitrageStrategy:
         # Strategy state
         self.running = False
         self.last_scan = datetime.now()
-        self.scan_interval = 5  # seconds
+        
+        # CHANGE FROM: self.scan_interval = 5  # too frequent!
+        self.scan_interval = settings.arbitrage_scan_interval  # Use settings value
+        
+        # Add mode-based intervals
+        if hasattr(settings, 'trading_mode') and settings.trading_mode == 'paper':
+            self.scan_interval = settings.arbitrage_scan_interval * 2  # Even slower for paper trading
+            self.logger.info("Paper trading mode: Using slower arbitrage scan interval")
+        
         self.min_profit_threshold = settings.min_arbitrage_profit
         
         # Performance tracking

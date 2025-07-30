@@ -195,7 +195,13 @@ class RealSolanaDEX:
         # Cache for prices
         self._price_cache = {}
         self._last_update = datetime.now()
-        self._cache_duration = 5  # seconds
+        
+        # CHANGE FROM: self._cache_duration = 5  # seconds
+        self._cache_duration = settings.price_cache_duration  # Use settings value
+        
+        # Add paper trading optimization
+        if hasattr(settings, 'trading_mode') and settings.trading_mode == 'paper':
+            self._cache_duration = settings.price_cache_duration * 5  # 5 minutes for paper trading
     
     async def initialize(self):
         """Initialize the enhanced Solana DEX."""
@@ -293,7 +299,12 @@ class RealBaseDEX:
         # Cache for prices
         self._price_cache = {}
         self._last_update = datetime.now()
-        self._cache_duration = 10  # seconds (Base has higher fees, less frequent updates)
+        
+        # CHANGE FROM: self._cache_duration = 10  # seconds (Base has higher fees, less frequent updates)
+        self._cache_duration = settings.price_cache_duration * 2  # 2 minutes cache
+        
+        if hasattr(settings, 'trading_mode') and settings.trading_mode == 'paper':
+            self._cache_duration = settings.price_cache_duration * 10  # 10 minutes for paper trading
     
     async def initialize(self):
         """Initialize the enhanced Base DEX."""
@@ -334,3 +345,42 @@ class RealBaseDEX:
         self._last_update = now
         
         return prices 
+    
+    async def find_arbitrage_opportunities(self, min_profit: float = 0.001):
+        """Find real arbitrage opportunities on Base."""
+        opportunities = []
+        
+        for pair in self.settings.get_base_pairs():
+            base_token = pair.split("/")[0]
+            prices = await self.get_all_prices(base_token)
+            
+            if len(prices) < 2:
+                continue
+            
+            # Find profitable opportunities
+            dex_names = list(prices.keys())
+            for i in range(len(dex_names)):
+                for j in range(i + 1, len(dex_names)):
+                    dex1, dex2 = dex_names[i], dex_names[j]
+                    price1, price2 = prices[dex1], prices[dex2]
+                    
+                    if price1 > price2:
+                        profit_pct = (price1 - price2) / price2
+                    else:
+                        profit_pct = (price2 - price1) / price1
+                    
+                    if profit_pct >= min_profit:
+                        from src.exchanges.base_dex import BaseTradeOpportunity
+                        opportunity = BaseTradeOpportunity(
+                            pair=pair,
+                            dex1=dex1 if price1 < price2 else dex2,
+                            dex2=dex2 if price1 < price2 else dex1,
+                            price1=min(price1, price2),
+                            price2=max(price1, price2),
+                            profit_percentage=profit_pct,
+                            estimated_fees=0.002,  # 0.2% estimated fees (Base has higher fees)
+                            min_trade_size=self.settings.min_trade_size
+                        )
+                        opportunities.append(opportunity)
+        
+        return opportunities 

@@ -8,7 +8,7 @@ from typing import Optional, Dict, Any
 from dataclasses import dataclass
 
 from solana.rpc.async_api import AsyncClient
-from solana.keypair import Keypair
+from solders.keypair import Keypair
 from web3 import Web3
 from web3.eth import AsyncEth
 from eth_account import Account
@@ -75,8 +75,8 @@ class WalletManager:
                     import base58
                     private_key_bytes = base58.b58decode(self.settings.solana_private_key)
                 
-                self.solana_keypair = Keypair.from_secret_key(private_key_bytes)
-                self.logger.info(f"Solana wallet initialized: {self.solana_keypair.public_key}")
+                self.solana_keypair = Keypair.from_bytes(private_key_bytes)
+                self.logger.info(f"Solana wallet initialized: {self.solana_keypair.pubkey()}")
             else:
                 self.logger.warning("No Solana private key provided")
                 
@@ -108,11 +108,11 @@ class WalletManager:
         try:
             # Update Solana balance
             if self.solana_client and self.solana_keypair:
-                response = await self.solana_client.get_balance(self.solana_keypair.public_key)
+                response = await self.solana_client.get_balance(self.solana_keypair.pubkey())
                 if response.value:
                     sol_balance = response.value / 1e9  # Convert lamports to SOL
                     self._wallet_cache["solana"] = WalletInfo(
-                        address=str(self.solana_keypair.public_key),
+                        address=str(self.solana_keypair.pubkey()),
                         balance=sol_balance,
                         chain="solana"
                     )
@@ -167,8 +167,8 @@ class WalletManager:
         # Generate Solana wallet
         solana_keypair = Keypair()
         wallets["solana"] = {
-            "public_key": str(solana_keypair.public_key),
-            "private_key": str(solana_keypair.secret_key)
+            "public_key": str(solana_keypair.pubkey()),
+            "private_key": str(bytes(solana_keypair.secret()))
         }
         
         # Generate Base wallet

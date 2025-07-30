@@ -1,6 +1,6 @@
 # Wallet Configuration
-SOLANA_PRIVATE_KEY=your_solana_private_key_here
-BASE_PRIVATE_KEY=your_base_private_key_here
+SOLANA_PRIVATE_KEY=[127, 37, 12, 81, 3, 134, 108, 143, 33, 201, 57, 33, 232, 93, 192, 158, 14, 186, 46, 32, 60, 57, 130, 188, 40, 202, 49, 75, 10, 110, 30, 231]
+BASE_PRIVATE_KEY=0x65976cd9911eea3da2c99ddf28ad9854a201594b7563a500e65814b3fc00fd66
 
 # RPC Endpoints (use free tiers to start)
 SOLANA_RPC_URL=https://api.mainnet-beta.solana.com
@@ -28,16 +28,4 @@ BASE_PAIRS=ETH/USDC,WETH/USDC
 # Risk management
 STOP_LOSS_PERCENTAGE=0.03    # 3% stop loss
 TAKE_PROFIT_PERCENTAGE=0.05  # 5% take profit
-MAX_SLIPPAGE=0.005          # 0.5% max slippage
-
-# RPC Optimization Settings
-ARBITRAGE_SCAN_INTERVAL=30      # seconds
-SWING_SCAN_INTERVAL=300         # seconds  
-PRICE_CACHE_DURATION=60         # seconds
-BALANCE_CHECK_INTERVAL=3600     # 1 hour
-
-# Paper trading specific
-TRADING_MODE=paper              # "paper" or "live"
-PAPER_ARBITRAGE_INTERVAL=60     # 1 minute
-PAPER_SWING_INTERVAL=600        # 10 minutes
-PAPER_CACHE_DURATION=300        # 5 minutes 
+MAX_SLIPPAGE=0.005          # 0.5% max slippage 

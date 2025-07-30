@@ -217,7 +217,7 @@ async def test_real_api_integration():
     print("🔄 Testing real API integration classes...")
     
     try:
-        from exchanges.real_apis import JupiterAPI, UniswapV3API
+        from src.exchanges.real_apis import JupiterAPI, UniswapV3API
         
         jupiter = JupiterAPI()
         uniswap = UniswapV3API()

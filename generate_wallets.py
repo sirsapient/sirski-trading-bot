@@ -6,7 +6,7 @@ This script generates new wallets for testing purposes.
 
 import json
 import base58
-from solana.keypair import Keypair
+from solders.keypair import Keypair
 from eth_account import Account
 from pathlib import Path
 
@@ -16,9 +16,9 @@ def generate_solana_wallet():
     keypair = Keypair()
     
     return {
-        "public_key": str(keypair.public_key),
-        "private_key": base58.b58encode(keypair.secret_key).decode('utf-8'),
-        "private_key_array": list(keypair.secret_key)
+        "public_key": str(keypair.pubkey()),
+        "private_key": base58.b58encode(bytes(keypair.secret())).decode('utf-8'),
+        "private_key_array": list(bytes(keypair.secret()))
     }
 
 

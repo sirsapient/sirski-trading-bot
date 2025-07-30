@@ -93,6 +93,18 @@ MAX_SLIPPAGE=0.005          # 0.5% max slippage
 # Trading Pairs
 SOLANA_PAIRS=SOL/USDC,ETH/USDC,RAY/USDC
 BASE_PAIRS=ETH/USDC,WETH/USDC
+
+# RPC Optimization Settings
+ARBITRAGE_SCAN_INTERVAL=30      # seconds
+SWING_SCAN_INTERVAL=300         # seconds  
+PRICE_CACHE_DURATION=60         # seconds
+BALANCE_CHECK_INTERVAL=3600     # 1 hour
+
+# Paper trading specific
+TRADING_MODE=paper              # "paper" or "live"
+PAPER_ARBITRAGE_INTERVAL=60     # 1 minute
+PAPER_SWING_INTERVAL=600        # 10 minutes
+PAPER_CACHE_DURATION=300        # 5 minutes
 ```
 
 ## 🚀 Usage
@@ -205,6 +217,25 @@ black src/
 - Solana: ~$0.001 per transaction
 - Base: ~$0.50-2.00 per transaction
 - Factor gas costs into profit calculations
+
+### RPC Optimization
+The bot includes intelligent RPC optimization to minimize API calls and costs:
+
+#### Scan Intervals
+- **Arbitrage**: 30 seconds (live), 60 seconds (paper)
+- **Swing Trading**: 5 minutes (live), 10 minutes (paper)
+- **Price Cache**: 1 minute (live), 5 minutes (paper)
+
+#### Rate Limiting
+- **Solana RPC**: 100 calls per 60 seconds
+- **Base RPC**: 50 calls per 60 seconds
+- **Jupiter API**: 200 calls per 60 seconds
+- **Uniswap API**: 100 calls per 60 seconds
+
+#### Paper Trading Benefits
+- Slower scan intervals reduce RPC costs
+- Longer cache durations minimize API calls
+- Perfect for testing strategies without real money
 
 ## 📈 Monitoring
 

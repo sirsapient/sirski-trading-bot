@@ -43,6 +43,13 @@ class Settings:
     # Monitoring
     discord_webhook_url: Optional[str] = None
     
+    # RPC optimization settings
+    arbitrage_scan_interval: int = 30
+    swing_scan_interval: int = 300
+    price_cache_duration: int = 60
+    balance_check_interval: int = 3600
+    trading_mode: str = "paper"  # or "live"
+    
     @classmethod
     def from_env_file(cls, env_file: str = ".env") -> "Settings":
         """Load settings from environment file."""
@@ -79,6 +86,13 @@ class Settings:
             
             # Monitoring
             discord_webhook_url=os.getenv("DISCORD_WEBHOOK_URL"),
+            
+            # Add RPC settings
+            arbitrage_scan_interval=int(os.getenv("ARBITRAGE_SCAN_INTERVAL", "30")),
+            swing_scan_interval=int(os.getenv("SWING_SCAN_INTERVAL", "300")),
+            price_cache_duration=int(os.getenv("PRICE_CACHE_DURATION", "60")),
+            balance_check_interval=int(os.getenv("BALANCE_CHECK_INTERVAL", "3600")),
+            trading_mode=os.getenv("TRADING_MODE", "paper"),
         )
     
     def validate_live_trading(self) -> bool:

@@ -56,7 +56,13 @@ class SwingTradingStrategy:
         # Strategy state
         self.running = False
         self.last_scan = datetime.now()
-        self.scan_interval = 60  # seconds (longer than arbitrage)
+        
+        # CHANGE FROM: self.scan_interval = 60  # This is actually fine
+        self.scan_interval = settings.swing_scan_interval  # Use settings value - 5 minutes default
+        
+        if hasattr(settings, 'trading_mode') and settings.trading_mode == 'paper':
+            self.scan_interval = settings.swing_scan_interval * 2  # 10 minutes for paper trading
+            self.logger.info("Paper trading mode: Using slower swing scan interval")
         
         # Technical analysis parameters
         self.rsi_period = 14

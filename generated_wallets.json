@@ -1,0 +1,46 @@
+{
+  "solana": {
+    "public_key": "GJAsfvBwniNyG5uoct9Dv34wUagxp5Vw96ashWqjt2Ap",
+    "private_key": "3moGcpJEKtjJffXE3pez1zfypRzg5QDDvMLfUkRFPRTu",
+    "private_key_array": [
+      41,
+      49,
+      63,
+      12,
+      43,
+      15,
+      43,
+      254,
+      192,
+      220,
+      201,
+      47,
+      49,
+      254,
+      151,
+      238,
+      165,
+      54,
+      172,
+      252,
+      24,
+      108,
+      240,
+      240,
+      218,
+      133,
+      76,
+      36,
+      99,
+      107,
+      179,
+      8
+    ]
+  },
+  "base": {
+    "address": "0xd199a6a00B362550d03d44842CC6e963Ae03B972",
+    "private_key": "56e5d86c44539355f6825160cb438ba2007dad040bf1398d162ddecf7df0cfc1",
+    "private_key_with_0x": "0x56e5d86c44539355f6825160cb438ba2007dad040bf1398d162ddecf7df0cfc1"
+  },
+  "generated_at": "2024-01-01T00:00:00Z"
+}
