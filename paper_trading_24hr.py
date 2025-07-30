@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-24-Hour Paper Trading Bot with Gradual Scaling
-This script runs extended paper trading with proper monitoring and scaling.
+24-Hour Paper Trading Bot with Real Multi-DEX Arbitrage
+This script runs extended paper trading using real Solana DEX arbitrage opportunities.
 """
 
 import asyncio
@@ -13,6 +13,9 @@ import os
 from datetime import datetime, timedelta
 from pathlib import Path
 from dotenv import load_dotenv
+
+# Import the new multi-DEX scanner
+from src.exchanges.real_solana_multi_dex import RealSolanaMultiDEX, ArbitrageOpportunity
 
 # Setup logging with rotation
 from logging.handlers import RotatingFileHandler
@@ -32,7 +35,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 class ExtendedPaperTradingBot:
-    """Extended paper trading bot for 24-hour testing."""
+    """Extended paper trading bot for 24-hour testing with real multi-DEX arbitrage."""
     
     def __init__(self, config_file="paper_trading.env"):
         load_dotenv(config_file)
@@ -60,10 +63,14 @@ class ExtendedPaperTradingBot:
             4: {"duration_hours": 12, "min_trade_size": 150, "max_position_size": 0.25} # Aggressive
         }
         
-        # API endpoints
-        self.coingecko_url = "https://api.coingecko.com/api/v3/simple/price"
+        # Initialize the real multi-DEX scanner
+        self.multi_dex_scanner = RealSolanaMultiDEX()
+        
+        # Supported tokens for arbitrage
+        self.supported_tokens = ["SOL", "RAY", "ORCA"]
         
         logger.info(f"24-Hour Paper Trading Bot initialized with ${self.portfolio_value} portfolio")
+        logger.info(f"Using Real Multi-DEX Arbitrage Scanner (Jupiter, Orca, Raydium, Meteora, Saber)")
         logger.info(f"Starting Phase 1: Conservative settings")
     
     def update_phase_settings(self, phase):
@@ -74,98 +81,102 @@ class ExtendedPaperTradingBot:
             self.max_position_size = phase_config["max_position_size"]
             logger.info(f"Switching to Phase {phase}: Trade size ${self.min_trade_size}, Position size {self.max_position_size:.0%}")
     
-    async def get_token_prices(self, session):
-        """Get current token prices from CoinGecko."""
+    async def get_real_arbitrage_opportunities(self):
+        """Get real arbitrage opportunities from multi-DEX scanner."""
         try:
-            params = {
-                "ids": "solana,ethereum",
-                "vs_currencies": "usd"
-            }
+            # Initialize the scanner if not already done
+            if not hasattr(self, '_scanner_initialized'):
+                await self.multi_dex_scanner.initialize()
+                self._scanner_initialized = True
             
-            async with session.get(self.coingecko_url, params=params) as response:
-                if response.status == 200:
-                    data = await response.json()
-                    return {
-                        "SOL": data["solana"]["usd"],
-                        "ETH": data["ethereum"]["usd"]
-                    }
-                else:
-                    logger.error(f"Failed to get prices: {response.status}")
-                    return None
+            all_opportunities = []
+            
+            # Scan all supported tokens for arbitrage opportunities
+            for token in self.supported_tokens:
+                try:
+                    opportunities = await self.multi_dex_scanner.scan_all_dexs(token)
+                    all_opportunities.extend(opportunities)
+                    logger.info(f"Found {len(opportunities)} arbitrage opportunities for {token}")
+                except Exception as e:
+                    logger.error(f"Error scanning {token}: {e}")
+            
+            # Convert to the format expected by the trading bot
+            formatted_opportunities = []
+            for opp in all_opportunities:
+                if opp.profit_percentage >= self.min_arbitrage_profit and opp.confidence_score > 0.3:
+                    formatted_opportunities.append({
+                        "token": opp.token_pair.split('/')[0],
+                        "buy_exchange": opp.buy_dex.dex_name.title(),
+                        "sell_exchange": opp.sell_dex.dex_name.title(),
+                        "buy_price": opp.buy_dex.price,
+                        "sell_price": opp.sell_dex.price,
+                        "profit_pct": opp.profit_percentage,
+                        "estimated_profit": opp.estimated_profit,
+                        "confidence_score": opp.confidence_score,
+                        "required_capital": opp.required_capital,
+                        "liquidity": min(opp.buy_dex.liquidity, opp.sell_dex.liquidity)
+                    })
+            
+            # Sort by profit percentage
+            formatted_opportunities.sort(key=lambda x: x["profit_pct"], reverse=True)
+            
+            logger.info(f"Total real arbitrage opportunities found: {len(formatted_opportunities)}")
+            return formatted_opportunities
+            
+        except Exception as e:
+            logger.error(f"Error getting real arbitrage opportunities: {e}")
+            return []
+    
+    async def get_token_prices(self, session):
+        """Get current token prices from real DEXs (for compatibility)."""
+        try:
+            # Use the multi-DEX scanner to get current prices
+            if not hasattr(self, '_scanner_initialized'):
+                await self.multi_dex_scanner.initialize()
+                self._scanner_initialized = True
+            
+            prices = {}
+            for token in self.supported_tokens:
+                try:
+                    # Get Jupiter price as reference
+                    jupiter_price = await self.multi_dex_scanner._get_jupiter_aggregated_price(token)
+                    if jupiter_price:
+                        prices[token] = jupiter_price.price
+                except Exception as e:
+                    logger.error(f"Error getting {token} price: {e}")
+            
+            return prices
+            
         except Exception as e:
             logger.error(f"Error fetching prices: {e}")
             return None
     
     def calculate_arbitrage_opportunities(self, prices):
-        """Calculate potential arbitrage opportunities."""
-        opportunities = []
-        
-        # Simulate price differences between exchanges
-        if prices:
-            sol_price = prices["SOL"]
-            eth_price = prices["ETH"]
-            
-            # Simulate different prices on different DEXs
-            sol_jupiter = sol_price
-            sol_orca = sol_price * 1.002  # 0.2% higher
-            sol_raydium = sol_price * 0.998  # 0.2% lower
-            
-            eth_uniswap = eth_price
-            eth_aerodrome = eth_price * 1.0015  # 0.15% higher
-            
-            # Check SOL arbitrage opportunities
-            if sol_orca > sol_jupiter:
-                profit_pct = (sol_orca - sol_jupiter) / sol_jupiter
-                if profit_pct > self.min_arbitrage_profit:
-                    opportunities.append({
-                        "token": "SOL",
-                        "buy_exchange": "Jupiter",
-                        "sell_exchange": "Orca",
-                        "buy_price": sol_jupiter,
-                        "sell_price": sol_orca,
-                        "profit_pct": profit_pct,
-                        "estimated_profit": profit_pct * self.min_trade_size
-                    })
-            
-            if sol_jupiter > sol_raydium:
-                profit_pct = (sol_jupiter - sol_raydium) / sol_raydium
-                if profit_pct > self.min_arbitrage_profit:
-                    opportunities.append({
-                        "token": "SOL",
-                        "buy_exchange": "Raydium",
-                        "sell_exchange": "Jupiter",
-                        "buy_price": sol_raydium,
-                        "sell_price": sol_jupiter,
-                        "profit_pct": profit_pct,
-                        "estimated_profit": profit_pct * self.min_trade_size
-                    })
-            
-            # Check ETH arbitrage opportunities
-            if eth_aerodrome > eth_uniswap:
-                profit_pct = (eth_aerodrome - eth_uniswap) / eth_uniswap
-                if profit_pct > self.min_arbitrage_profit:
-                    opportunities.append({
-                        "token": "ETH",
-                        "buy_exchange": "Uniswap",
-                        "sell_exchange": "Aerodrome",
-                        "buy_price": eth_uniswap,
-                        "sell_price": eth_aerodrome,
-                        "profit_pct": profit_pct,
-                        "estimated_profit": profit_pct * self.min_trade_size
-                    })
-        
-        return opportunities
+        """Calculate potential arbitrage opportunities (legacy method - now uses real data)."""
+        # This method is kept for compatibility but now returns empty list
+        # Real arbitrage opportunities are handled by get_real_arbitrage_opportunities()
+        return []
     
     def execute_paper_trade(self, opportunity):
-        """Execute a paper trade."""
+        """Execute a paper trade with real arbitrage data."""
         trade_id = f"trade_{self.total_trades + 1}_{int(time.time())}"
         
-        # Calculate position size
-        position_size = min(self.min_trade_size, self.portfolio_value * self.max_position_size)
+        # Calculate position size based on confidence and liquidity
+        confidence_score = opportunity.get("confidence_score", 0.5)
+        liquidity = opportunity.get("liquidity", 0)
         
-        # Simulate trade execution
+        # Adjust position size based on confidence and liquidity
+        base_position_size = min(self.min_trade_size, self.portfolio_value * self.max_position_size)
+        confidence_multiplier = min(1.5, confidence_score * 2)  # Max 1.5x for high confidence
+        liquidity_multiplier = min(1.2, liquidity / 100000)  # Max 1.2x for high liquidity
+        
+        position_size = base_position_size * confidence_multiplier * liquidity_multiplier
+        
+        # Simulate trade execution with slippage and fees
         estimated_profit = opportunity["estimated_profit"]
-        actual_profit = estimated_profit * 0.8  # 80% of estimated profit (realistic)
+        slippage_factor = 0.95  # 5% slippage
+        fee_factor = 0.99  # 1% fees
+        actual_profit = estimated_profit * slippage_factor * fee_factor
         
         # Update portfolio
         self.portfolio_value += actual_profit
@@ -175,7 +186,7 @@ class ExtendedPaperTradingBot:
         if actual_profit > 0:
             self.winning_trades += 1
         
-        # Record trade
+        # Record trade with enhanced data
         trade_record = {
             "id": trade_id,
             "timestamp": datetime.now().isoformat(),
@@ -188,14 +199,18 @@ class ExtendedPaperTradingBot:
             "position_size": position_size,
             "estimated_profit": estimated_profit,
             "actual_profit": actual_profit,
-            "profit_pct": opportunity["profit_pct"]
+            "profit_pct": opportunity["profit_pct"],
+            "confidence_score": confidence_score,
+            "liquidity": liquidity,
+            "required_capital": opportunity.get("required_capital", 0)
         }
         
         self.positions[trade_id] = trade_record
         
         logger.info(f"PAPER TRADE [Phase {self.current_phase}]: {opportunity['token']} "
                    f"({opportunity['buy_exchange']} -> {opportunity['sell_exchange']}) "
-                   f"Profit: ${actual_profit:.2f} ({opportunity['profit_pct']:.3%})")
+                   f"Profit: ${actual_profit:.2f} ({opportunity['profit_pct']:.3%}) "
+                   f"Confidence: {confidence_score:.2f} Liquidity: ${liquidity:,.0f}")
         
         return trade_record
     
@@ -267,20 +282,18 @@ class ExtendedPaperTradingBot:
                         self.current_phase += 1
                         self.update_phase_settings(self.current_phase)
                     
-                    # Get current prices
-                    prices = await self.get_token_prices(session)
+                    # Get real arbitrage opportunities from multi-DEX scanner
+                    opportunities = await self.get_real_arbitrage_opportunities()
                     
-                    if prices:
-                        # Find arbitrage opportunities
-                        opportunities = self.calculate_arbitrage_opportunities(prices)
-                        
-                        # Execute trades for profitable opportunities
-                        for opportunity in opportunities:
-                            if self.daily_pnl > -(self.portfolio_value * self.max_daily_loss):
+                    # Execute trades for profitable opportunities
+                    for opportunity in opportunities:
+                        if self.daily_pnl > -(self.portfolio_value * self.max_daily_loss):
+                            # Add confidence score to opportunity for better decision making
+                            if opportunity.get("confidence_score", 0) > 0.3:
                                 self.execute_paper_trade(opportunity)
-                            else:
-                                logger.warning("Daily loss limit reached, stopping trades")
-                                break
+                        else:
+                            logger.warning("Daily loss limit reached, stopping trades")
+                            break
                     
                     # Print hourly summary
                     current_hour = int(elapsed_hours)
@@ -355,7 +368,13 @@ class ExtendedPaperTradingBot:
 async def main():
     """Main entry point."""
     bot = ExtendedPaperTradingBot()
-    await bot.run_24hr_paper_trading()
+    try:
+        await bot.run_24hr_paper_trading()
+    finally:
+        # Clean up the multi-DEX scanner
+        if hasattr(bot, 'multi_dex_scanner'):
+            await bot.multi_dex_scanner.close()
+            logger.info("Multi-DEX scanner closed successfully")
 
 if __name__ == "__main__":
     asyncio.run(main()) 
